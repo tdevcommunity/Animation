@@ -1,0 +1,241 @@
+@keyframes topleft {
+    0% {
+        background-color: black;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    25% {
+        background-color: red;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+    50% {
+        background-color: yellow;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    75% {
+        background-color: green;
+        margin-left: 25%;
+        margin-top: 25%;
+    }
+    100% {
+        background-color: blue;
+        margin-left: 40%;
+        margin-top: 40%;
+    }
+}
+
+@keyframes bottomleft {
+    0% {
+        background-color: aliceblue;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    25% {
+        background-color: slategray;
+        margin-left: 15%;
+        margin-bottom: 15%;
+    }
+    50% {
+        background-color: yellow;
+        margin-left: 20%;
+        margin-bottom: 20%;
+    }
+    75% {
+        background-color: red;
+        margin-left: 25%;
+        margin-bottom: 25%;
+    }
+    100% {
+        background-color: sandybrown;
+        margin-left: 40%;
+        margin-bottom: 40%;
+    }
+}
+
+@keyframes topright {
+    0% {
+        background-color: black;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+    25% {
+        background-color: red;
+        margin-right: 15%;
+        margin-top: 15%;
+    }
+    50% {
+        background-color: yellow;
+        margin-right: 20%;
+        margin-top: 20%;
+    }
+    75% {
+        background-color: green;
+        margin-right: 25%;
+        margin-top: 25%;
+    }
+    100% {
+        background-color: blue;
+        margin-right: 40%;
+        margin-top: 40%;
+    }
+}
+
+@keyframes bottomright {
+    0% {
+        background-color: blue;
+        margin-right: 10%;
+        margin-bottom: 10%;
+    }
+    25% {
+        background-color: green;
+        margin-right: 15%;
+        margin-bottom: 15%;
+    }
+    50% {
+        background-color: slateblue;
+        margin-right: 20%;
+        margin-bottom: 20%;
+    }
+    75% {
+        background-color: yellow;
+        margin-right: 25%;
+        margin-bottom: 25%;
+    }
+    100% {
+        background-color: goldenrod;
+        margin-right: 40%;
+        margin-bottom: 40%;
+    }
+}
+
+@keyframes triangle {
+    0% {
+        border-bottom-color: bisque;
+        margin-right: 80%;
+        margin-bottom: 50%;
+    }
+    25% {
+        border-bottom-color: brown;
+        margin-right: 50%;
+        margin-bottom: 15%;
+    }
+    50% {
+        border-bottom-color: slateblue;
+        margin-left: 20%;
+        margin-bottom: 50%;
+    }
+    75% {
+        border-bottom-color: black;
+        margin-right: 25%;
+        margin-bottom: 25%;
+    }
+    100% {
+        border-bottom-color: goldenrod;
+        margin-right: 40%;
+        margin-bottom: 40%;
+    }
+}
+
+@keyframes image {
+    0% {
+        border-color: black;
+        border-top-color: bisque;
+        margin-right: 80%;
+        margin-bottom: 50%;
+    }
+    25% {
+        border-color: black;
+        border-right-color: brown;
+        margin-right: 50%;
+        margin-bottom: 15%;
+    }
+    50% {
+        border-color: black;
+        border-left-color: slateblue;
+        margin-left: 20%;
+        margin-bottom: 50%;
+    }
+    75% {
+        border-color: black;
+        border-right-color: white;
+        margin-right: 25%;
+        margin-bottom: 25%;
+    }
+    100% {
+        border-color: black;
+        border-color: goldenrod;
+        margin-right: 40%;
+        margin-bottom: 40%;
+    }
+}
+
+.topleft {
+    float: left;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation-name: topleft;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.topright {
+    float: right;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    animation-name: topright;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.bottomleft {
+    float: left;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    animation-name: bottomleft;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.bottomright {
+    float: right;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    animation-name: bottomright;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.image {
+    float: inline-start;
+    height: 300px;
+    width: 300px;
+    border-left: 60px solid black;
+    border-right: 60px solid black;
+    border-top: 60px solid black;
+    border-bottom: 60px solid black;
+    animation-name: image;
+    background-image: url(images/5.jpg);
+    background-position: center;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.triangle {
+    float: inline-end;
+    height: 0px;
+    width: 0px;
+    border-left: 60px solid white;
+    border-right: 60px solid white;
+    border-bottom: 100px solid black;
+    animation-name: triangle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
